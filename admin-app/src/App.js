@@ -1,9 +1,10 @@
 import { Routes, Route } from 'react-router-dom';
 import { ColorModeContext, useMode} from './theme';
-import { CssBaseline, cssBaseline, ThemeProvider } from '@mui/material';
+import { CssBaseline, ThemeProvider } from '@mui/material';
 import Topbar from './views/global/Topbar';
 import Dashboard from './views/dashboard/index';
 import Sidebar from './views/global/Sidebar';
+import Team from './views/team/index';
 
 function App() {
   const [theme, colorMode] = useMode();
@@ -18,7 +19,7 @@ function App() {
             <Topbar />
             <Routes>
               <Route path="/" element={<Dashboard />} />
-              {/* <Route path="/team" element={<Team/>} /> */}
+              <Route path="/team" element={<Team/>} />
               {/* <Route path="/contacts" element={<Contacts />} /> */}
               {/* <Route path="/invoices" element={<Invoices/>} /> */}
               {/* <Route path="/form" element={<Form />} /> */}
