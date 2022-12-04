@@ -5,8 +5,8 @@ const Header = ({ title, subtitle }) => {
     const theme = useTheme();
     const colors = tokens(theme.palette.mode);
 
-    return 
-    <Box>
+    return (
+    <Box mb="30px">
         <Typography 
             variant="h2" 
             color={colors.grey[100]} 
@@ -22,4 +22,7 @@ const Header = ({ title, subtitle }) => {
             {subtitle}
         </Typography>
     </Box>
+    )
 }
+
+export default Header;
