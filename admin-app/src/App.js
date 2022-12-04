@@ -2,7 +2,7 @@ import { Routes, Route } from 'react-router-dom';
 import { ColorModeContext, useMode} from './theme';
 import { CssBaseline, cssBaseline, ThemeProvider } from '@mui/material';
 import Topbar from './views/global/Topbar';
-import Dashboard from './views/dashboard';
+import Dashboard from './views/dashboard/index';
 import Sidebar from './views/global/Sidebar';
 
 function App() {
